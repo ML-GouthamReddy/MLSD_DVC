@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  process_iris:
+    cmd: python ML_Model.py
+    deps:
+    - path: ML_Model.py
+      hash: md5
+      md5: d9de516a69c2c3509bd0ed89612d5681
+      size: 218
+    - path: iris.csv
+      hash: md5
+      md5: 4562edbca7ee00488400a5a4c19c5592
+      size: 104
+    outs:
+    - path: iris_processed.csv
+      hash: md5
+      md5: 7465e838ff3bde7e50166f2aa2c42e6c
+      size: 155
